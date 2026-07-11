@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homies Cafe | Feel at Home</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#FAF9F6] text-[#2C2A29] antialiased scroll-smooth">
+
+    <!-- 1. NAVIGATION BAR -->
+    <nav class="sticky top-0 z-50 bg-[#FAF9F6]/80 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tight text-[#1A1A1A]">Homies<span class="text-amber-700">.</span></a>
+            <div class="hidden md:flex space-x-8 font-medium text-sm text-stone-600">
+                <a href="#hero" class="hover:text-amber-700 transition">Home</a>
+                <a href="#menu" class="hover:text-amber-700 transition">Menu</a>
+                <a href="#ai-concierge" class="hover:text-amber-700 transition flex items-center gap-1">
+                    <span class="w-2 h-2 rounded-full bg-amber-600 animate-pulse"></span> AI Concierge
+                </a>
+                <a href="#about" class="hover:text-amber-700 transition">Our Story</a>
+            </div>
+            <a href="#menu" class="bg-[#1A1A1A] text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-amber-800 transition shadow-sm">
+                Order Now
+            </a>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <section id="hero" class="max-w-6xl mx-auto px-6 pt-16 pb-24 md:pt-24 md:pb-32 grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+            <span class="inline-block bg-amber-100 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+                Welcome to the Neighborhood
+            </span>
+            <h1 class="text-5xl md:text-6xl font-bold tracking-tight text-[#1A1A1A] leading-tight">
+                Good coffee. <br>Better company. <br><span class="text-amber-700">Homies style.</span>
+            </h1>
+            <p class="text-stone-600 text-lg max-w-md">
+                A minimalist space crafted for creators, remote workers, and friends. Tell our AI barista what you're craving today.
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                <a href="#menu" class="bg-[#1A1A1A] text-white text-center px-8 py-3.5 rounded-full font-medium hover:bg-stone-800 transition">
+                    Explore Menu
+                </a>
+                <a href="#ai-concierge" class="border border-stone-300 text-stone-800 text-center px-8 py-3.5 rounded-full font-medium hover:bg-stone-100 transition">
+                    Ask AI Assistant ✨
+                </a>
+            </div>
+        </div>
+        <!-- Placeholder for a high-quality aesthetic image -->
+        <div class="relative h-[450px] bg-stone-200 rounded-3xl overflow-hidden shadow-xl">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1000&auto=format&fit=crop');"></div>
+            <div class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-4 rounded-2xl flex justify-between items-center">
+                <div>
+                    <p class="text-xs text-stone-500 font-semibold uppercase">Today's Special</p>
+                    <p class="font-bold text-stone-800">Vanilla Sea Salt Cold Brew</p>
+                </div>
+                <span class="text-amber-700 font-semibold">$5.50</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. AI HELP / CONCIERGE INTERFACE -->
+    <section id="ai-concierge" class="bg-[#1A1A1A] text-stone-100 py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center space-y-4 mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Meet Your AI Barista</h2>
+            <p class="text-stone-400 max-w-lg mx-auto">
+                Not sure what to order? Describe your mood or flavor preferences, and our smart assistant will brew up the perfect recommendation.
+            </p>
+        </div>
+
+        <!-- Interactive AI Box Mockup -->
+        <div class="max-w-2xl mx-auto bg-stone-900 border border-stone-800 rounded-2xl shadow-2xl overflow-hidden">
+            <!-- Chat Header -->
+            <div class="px-6 py-4 bg-stone-850 border-b border-stone-800 flex items-center gap-3">
+                <div class="w-3 h-3 rounded-full bg-amber-500 animate-pulse"></div>
+                <p class="text-xs font-semibold uppercase tracking-wider text-stone-400">Homies AI Assistant v1.0</p>
+            </div>
+            
+            <!-- Chat Body -->
+            <div class="p-6 space-y-4 text-sm">
+                <div class="flex gap-3">
+                    <div class="bg-amber-700/20 text-amber-400 w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">H</div>
+                    <div class="bg-stone-800 p-3.5 rounded-2xl rounded-tl-none max-w-[85%] text-stone-300">
+                        Hey homie! 👋 I can recommend a drink based on how you feel. Try typing something like: *"I need a lot of caffeine but it's hot today"* or *"Something sweet and decaf."*
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Input Mockup -->
+            <div class="p-4 bg-stone-950 border-t border-stone-800 flex gap-2">
+                <input type="text" placeholder="Tell me what you're craving..." class="w-full bg-stone-900 border border-stone-800 rounded-xl px-4 py-3 text-stone-200 focus:outline-none focus:border-amber-600 transition placeholder-stone-500">
+                <button class="bg-amber-700 hover:bg-amber-600 text-white px-5 py-3 rounded-xl font-medium transition flex-shrink-0">
+                    Ask
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. NAVIGATING MENU & DRINKS -->
+    <section id="menu" class="max-w-6xl mx-auto px-6 py-24">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
+            <div>
+                <h2 class="text-3xl font-bold tracking-tight text-[#1A1A1A]">Explore Our Menu</h2>
+                <p class="text-stone-500 mt-2">Carefully sourced, locally roasted.</p>
+            </div>
+            <!-- Dynamic Category Filter Navigation -->
+            <div class="flex flex-wrap gap-2">
+                <button class="px-4 py-2 bg-[#1A1A1A] text-white text-sm font-medium rounded-full transition shadow-sm">All Drinks</button>
+                <button class="px-4 py-2 bg-stone-200 hover:bg-stone-300 text-stone-800 text-sm font-medium rounded-full transition">Espresso</button>
+                <button class="px-4 py-2 bg-stone-200 hover:bg-stone-300 text-stone-800 text-sm font-medium rounded-full transition">Cold Brews</button>
+                <button class="px-4 py-2 bg-stone-200 hover:bg-stone-300 text-stone-800 text-sm font-medium rounded-full transition">Teas & Matcha</button>
+            </div>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Item 1 -->
+            <div class="bg-white border border-stone-100 rounded-2xl p-5 hover:shadow-lg transition flex flex-col justify-between">
+                <div>
+                    <div class="h-48 bg-stone-100 rounded-xl mb-4 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600&auto=format&fit=crop');"></div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-bold text-lg text-stone-900">Homies Signature Latte</h3>
+                        <span class="bg-amber-50 text-amber-800 text-xs font-semibold px-2 py-0.5 rounded">Popular</span>
+                    </div>
+                    <p class="text-stone-500 text-sm line-clamp-2">Our classic espresso with house-made vanilla bean syrup and oat milk.</p>
+                </div>
+                <div class="flex justify-between items-center mt-6 pt-4 border-t border-stone-50">
+                    <span class="font-bold text-stone-900 text-lg">$5.25</span>
+                    <button class="text-sm font-semibold text-amber-700 hover:text-amber-800">+ Add to Order</button>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="bg-white border border-stone-100 rounded-2xl p-5 hover:shadow-lg transition flex flex-col justify-between">
+                <div>
+                    <div class="h-48 bg-stone-100 rounded-xl mb-4 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=600&auto=format&fit=crop');"></div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-bold text-lg text-stone-900">Spanish Latte</h3>
+                    </div>
+                    <p class="text-stone-500 text-sm line-clamp-2">Espresso layered with sweet condensed milk and texture-rich steamed whole milk.</p>
+                </div>
+                <div class="flex justify-between items-center mt-6 pt-4 border-t border-stone-50">
+                    <span class="font-bold text-stone-900 text-lg">$5.50</span>
+                    <button class="text-sm font-semibold text-amber-700 hover:text-amber-800">+ Add to Order</button>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="bg-white border border-stone-100 rounded-2xl p-5 hover:shadow-lg transition flex flex-col justify-between">
+                <div>
+                    <div class="h-48 bg-stone-100 rounded-xl mb-4 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1536256263959-770b48d82b0a?q=80&w=600&auto=format&fit=crop');"></div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-bold text-lg text-stone-900">Ceremonial Uji Matcha</h3>
+                    </div>
+                    <p class="text-stone-500 text-sm line-clamp-2">Authentic Japanese matcha whisked to perfection, served over ice with your choice of milk.</p>
+                </div>
+                <div class="flex justify-between items-center mt-6 pt-4 border-t border-stone-50">
+                    <span class="font-bold text-stone-900 text-lg">$6.00</span>
+                    <button class="text-sm font-semibold text-amber-700 hover:text-amber-800">+ Add to Order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="border-t border-stone-200 bg-white py-12 px-6 text-center text-sm text-stone-500">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="font-bold text-stone-800 text-lg">Homies Cafe.</p>
+            <p>&copy; 2026 Homies Cafe. Built with AI. All rights reserved.</p>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-stone-800">Instagram</a>
+                <a href="#" class="hover:text-stone-800">Location</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
